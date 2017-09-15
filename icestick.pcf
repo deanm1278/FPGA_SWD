@@ -1,0 +1,79 @@
+# ##############################################################################
+
+# iCEstick PCF
+
+# ##############################################################################
+
+# Since Arachne doesn't seem to like ignoring unused constraints
+# You will have to put ## in front of things you aren't using
+# And then remove ## from anything you are using
+# (## so you don't accidentally remove # comments)
+
+# Clock
+set_io clock 21   # 12 MHz clock
+
+# LEDs
+##set_io io_led0 95  # green
+##set_io io_led1 99  # red
+##set_io io_led2 98  # red
+##set_io io_led3 97  # red
+#set_io io_led4 96  # red
+
+# IRDA interface
+##set_io IRRXD 106
+##set_io IRTXD 105
+##set_io IRSD 107
+
+# SPI (to configuration EEPROM)
+set_io io_FLASH_SCK 70
+set_io io_FLASH_MISO 68
+set_io io_FLASH_MOSI 67
+set_io io_FLASH_SSEL 71
+
+# J1
+# set_io J1_1  3.3V
+# set_io J1_2 GND
+##set_io J1_3 112  # PIO0_02
+##set_io J1_4 113  # PIO0_03
+##set_io J1_5 114  # PIO0_04
+##set_io J1_6 115  # PIO0_05
+##set_io J1_7 116  # PIO0_06 PMOD pin 7
+##set_io J1_8 117  # PIO0_07 PMOD pin 8
+##set_io J1_9 118  # PIO0_08 PMOD pin 9
+##set_io J1_10 119 # PIO0_09 PMOD pin 10
+
+# J3
+# set_io J3_1 3.3V
+# set_io J3_2 GND
+set_io io_MOSI 62  # PIO2_17
+set_io io_MISO 61  # PIO2_16
+set_io io_SCK 60  # PIO2_15
+set_io io_SSEL 56  # PIO2_14
+##set_io J3_7 48  # PIO2_13
+##set_io J3_8 47  # PIO2_12
+set_io io_SWCLK 45  # PIO2_11
+set_io io_SWDIO 44  # PIO2_10
+
+# PMOD
+# Note: pin 5 and 11 are ground, pins 6 and 12 are Vcc
+set_io reset 78 # PIO1_02
+##set_io io_SCK 79 # PIO1_03
+##set_io io_pmod3 80 # PIO1_04
+##set_io io_pmod4 81 # PIO1_05
+##set_io PMOD7 87 # PIO1_06
+##set_io PMOD8 88 # PIO1_07
+##set_io PMOD9 90 # PIO1_08
+##set_io PMOD10 91 # PIO1_09
+
+# FTDI Port B UART
+#set_io DCDn 1
+#set_io DSRn 2
+#set_io DTRn 3
+#set_io CTSn 4
+#set_io RTSn 7
+#set_io RS232_Tx 8
+#set_io RS232_Rx 9
+
+# Config pins
+#set_io CDONE 65
+#set_io CRESET_B 66
